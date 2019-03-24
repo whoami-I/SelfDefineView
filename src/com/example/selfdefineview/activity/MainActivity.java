@@ -1,10 +1,13 @@
-package com.example.selfdefineview;
+package com.example.selfdefineview.activity;
 
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.AttributeSet;
 import android.widget.ScrollView;
+
+import com.example.selfdefineview.QQStepView;
+import com.example.selfdefineview.R;
 
 class MyScrollView extends ScrollView {
 
