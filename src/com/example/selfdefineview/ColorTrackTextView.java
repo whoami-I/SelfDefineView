@@ -86,6 +86,8 @@ public class ColorTrackTextView extends TextView {
 		float textSize = getTextSize();
 		paint.setTextSize(textSize);
 		paint.setColor(color);
+		paint.setAntiAlias(true);
+		paint.setDither(true);
 		Rect bound = new Rect();
 		paint.getTextBounds(text, 0, text.length(), bound);
 		int x = (getWidth() - bound.width()) / 2;
