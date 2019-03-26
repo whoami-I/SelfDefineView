@@ -191,6 +191,8 @@ public class QQStepView extends View {
 		int bottom = (getHeight() + w - mArchWidth) / 2;
 		// »­ÍâÔ²»¡
 		mPaint.reset();
+		mPaint.setAntiAlias(true);
+		mPaint.setDither(true);
 		mPaint.setColor(mOuterArchColor);
 		mPaint.setStrokeWidth(mArchWidth);
 		mPaint.setStyle(Paint.Style.STROKE);
@@ -203,6 +205,8 @@ public class QQStepView extends View {
 
 		// »­ÄÚÔ²»¡
 		mPaint.reset();
+		mPaint.setAntiAlias(true);
+		mPaint.setDither(true);
 		mPaint.setColor(mInnerArchColor);
 		mPaint.setStrokeWidth(mArchWidth);
 		mPaint.setStyle(Paint.Style.STROKE);
@@ -214,6 +218,8 @@ public class QQStepView extends View {
 
 		// ×Ö
 		mPaint.reset();
+		mPaint.setAntiAlias(true);
+		mPaint.setDither(true);
 		mPaint.setTextSize(mStepTextSize);
 		mPaint.setColor(mStepTextColor);
 		String stepCur = Integer.toString(mStepCur);

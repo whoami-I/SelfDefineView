@@ -18,4 +18,12 @@
         app:stepTextColor="@color/hotpink"
         app:stepTextSize="30sp" />
 
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qs"
+        android:layout_centerInParent="true"
+        android:text="开始" />
+
 </RelativeLayout>

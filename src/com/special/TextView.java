@@ -1,4 +1,4 @@
-package com.example.selfdefineview;
+package com.special;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -11,9 +11,44 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 
+import com.example.selfdefineview.R;
+
 public class TextView extends View {
 	private static final String TAG = "TextView";
 	private String text;
+
+	public String getText() {
+		return text;
+	}
+
+	public void setText(String text) {
+		this.text = text;
+	}
+
+	public int getTextColor() {
+		return textColor;
+	}
+
+	public void setTextColor(int textColor) {
+		this.textColor = textColor;
+	}
+
+	public int getBackgroundColor() {
+		return backgroundColor;
+	}
+
+	public void setBackgroundColor(int backgroundColor) {
+		this.backgroundColor = backgroundColor;
+	}
+
+	public int getTextSize() {
+		return textSize;
+	}
+
+	public void setTextSize(int textSize) {
+		this.textSize = textSize;
+	}
+
 	private int textColor = Color.BLACK;
 	private int backgroundColor = Color.BLACK;
 	private int textSize = 20;
@@ -90,8 +125,11 @@ public class TextView extends View {
 		rect.set(0, 0, getWidth(), getHeight());
 		canvas.drawRect(rect, paint);
 		paint.setColor(textColor);
-		// paint.setTextSize(20);
+		paint.setAntiAlias(true);
+		paint.setDither(true);
+		paint.setTextSize(textSize);
 		paint.setTextSize(textColor);
+
 		canvas.drawText(text, 0, getHeight() / 2, paint);
 	}
 }

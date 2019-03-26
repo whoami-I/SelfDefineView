@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.util.AttributeSet;
 import android.widget.ScrollView;
 
-import com.example.selfdefineview.QQStepView;
 import com.example.selfdefineview.R;
 
 class MyScrollView extends ScrollView {
@@ -30,14 +29,7 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_qqstepview);
-
-		final QQStepView qs = (QQStepView) findViewById(R.id.qs);
-		qs.setStepMax(4000);
-		qs.setStart(100);
-		qs.setEnd(3000);
-		qs.setDuration(1000);
-		qs.start();
+		setContentView(R.layout.activity_main);
 
 	}
 }

@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res/com.example.selfdefineview"
     android:id="@+id/sl"
@@ -6,12 +6,27 @@
     android:layout_height="match_parent"
     tools:context="com.example.selfdefineview.MainActivity" >
 
-    <com.example.selfdefineview.TextView
+    <com.example.selfdefineview.AlphabetSideBar
+        android:id="@+id/ab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:background="#000000"
-        app:text="123"
-        app:textColor="#ffffff"
-        app:textSize="20sp" />
+        android:layout_alignParentRight="true"
+        android:background="#00ffffff"
+        android:orientation="vertical"
+        android:padding="0dp"
+        android:textColor="#000"
+        app:selectedColor="#fff" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="40sp" />
+
+</RelativeLayout>

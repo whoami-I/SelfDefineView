@@ -19,5 +19,14 @@
         <attr name="originColor" format="color" />
         <attr name="changeColor" format="color" />
     </declare-styleable>
+    <declare-styleable name="ColorProgressBar">
+        <attr name="color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="AlphabetSideBar">
+        <attr name="android:textColor" />
+        <attr name="android:background" />
+        <attr name="android:textSize" />
+        <attr name="selectedColor" format="color" />
+    </declare-styleable>
 
 </resources>
