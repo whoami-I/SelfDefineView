@@ -609,8 +609,9 @@ containing a value of this type.
         public static final int activity_colorprogressbar=0x7f030000;
         public static final int activity_colortracktextview=0x7f030001;
         public static final int activity_main=0x7f030002;
-        public static final int activity_qqstepview=0x7f030003;
-        public static final int activity_threeballview=0x7f030004;
+        public static final int activity_ninesqure=0x7f030003;
+        public static final int activity_qqstepview=0x7f030004;
+        public static final int activity_threeballview=0x7f030005;
     }
     public static final class menu {
         public static final int main=0x7f090000;

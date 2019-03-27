@@ -23,6 +23,7 @@ public class ColorProgressBar extends View {
 	protected float endOffset;
 	private float headOffset2;
 	private float endOffset2;
+	private int start;
 	private AnimatorSet animSet;
 
 	public ColorProgressBar(Context context) {
@@ -57,7 +58,7 @@ public class ColorProgressBar extends View {
 
 	private void initAnimation() {
 
-		ValueAnimator animator1 = ValueAnimator.ofFloat(0, 240);
+		ValueAnimator animator1 = ValueAnimator.ofFloat(start, 240);
 		animator1.setDuration(2000);
 		animator1.setInterpolator(new DecelerateInterpolator());
 		animator1.addUpdateListener(new AnimatorUpdateListener() {
@@ -131,8 +132,8 @@ public class ColorProgressBar extends View {
 		rectF.set(strokeWidth, strokeWidth, getWidth() - strokeWidth,
 				getHeight() - strokeWidth);
 
-		canvas.drawArc(rectF, endOffset + endOffset2, headOffset - endOffset2,
-				false, mPaint);
+		canvas.drawArc(rectF, start + endOffset + endOffset2, headOffset
+				- endOffset2 + 15, false, mPaint);
 		System.out.println("endOffset:" + endOffset);
 		System.out.println("endOffset2:" + endOffset2);
 		System.out.println("headOffset:" + headOffset);

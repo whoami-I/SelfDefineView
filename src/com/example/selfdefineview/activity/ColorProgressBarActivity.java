@@ -1,6 +1,7 @@
 package com.example.selfdefineview.activity;
 
 import android.app.Activity;
+import android.graphics.Canvas;
 import android.os.Bundle;
 
 import com.example.selfdefineview.ColorProgressBar;
@@ -19,7 +20,7 @@ public class ColorProgressBarActivity extends Activity {
 			@Override
 			public void run() {
 				pb.startAnimation();
-
+				Canvas canvas = new Canvas();
 			}
 		});
 	}
