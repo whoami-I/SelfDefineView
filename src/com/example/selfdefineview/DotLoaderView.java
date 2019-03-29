@@ -66,10 +66,11 @@ public class DotLoaderView extends RelativeLayout {
 		addView(view);
 		// View view = View.inflate(getContext(), R.layout.circleview, this);
 		views.add(view);
-		ObjectAnimator animator = ObjectAnimator.ofFloat(views.get(i), "x",
-				"y", path);
+		// ObjectAnimator animator = ObjectAnimator.ofFloat(views.get(i), "x",
+		// "y", path);
+		ObjectAnimator animator = ObjectAnimator.ofFloat(views.get(i),
+				"scaleX", 1f, 0.2f, 1f);
 		animator.setDuration(2000);
-
 		ObjectAnimator animator2 = ObjectAnimator.ofFloat(views.get(i),
 				"scaleX", 1f, 0.2f, 1f);
 		animator2.setDuration(2000);
