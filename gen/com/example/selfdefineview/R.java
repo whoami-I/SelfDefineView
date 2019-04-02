@@ -593,21 +593,22 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int ab=0x7f0a0008;
-        public static final int action_settings=0x7f0a000e;
-        public static final int ball=0x7f0a000d;
+        public static final int ab=0x7f0a0009;
+        public static final int action_settings=0x7f0a000f;
+        public static final int ball=0x7f0a000e;
         public static final int beerBubble=0x7f0a0001;
-        public static final int btn=0x7f0a0009;
+        public static final int btn=0x7f0a000a;
         public static final int ct=0x7f0a0003;
         public static final int dl=0x7f0a0006;
         public static final int hb=0x7f0a0007;
         public static final int left_to_right=0x7f0a0004;
+        public static final int linear=0x7f0a0008;
         public static final int pb=0x7f0a0002;
-        public static final int qs=0x7f0a000b;
+        public static final int qs=0x7f0a000c;
         public static final int right_to_left=0x7f0a0005;
-        public static final int sg=0x7f0a000c;
+        public static final int sg=0x7f0a000d;
         public static final int sl=0x7f0a0000;
-        public static final int tv=0x7f0a000a;
+        public static final int tv=0x7f0a000b;
     }
     public static final class layout {
         public static final int activity_beerbubbleloadview=0x7f030000;
@@ -615,13 +616,14 @@ containing a value of this type.
         public static final int activity_colortracktextview=0x7f030002;
         public static final int activity_dotloaderview=0x7f030003;
         public static final int activity_heartbeatview=0x7f030004;
-        public static final int activity_main=0x7f030005;
-        public static final int activity_ninesqure=0x7f030006;
-        public static final int activity_qqstepview=0x7f030007;
-        public static final int activity_sweepgradientview=0x7f030008;
-        public static final int activity_threeballview=0x7f030009;
-        public static final int circle=0x7f03000a;
-        public static final int circleview=0x7f03000b;
+        public static final int activity_lineargradienttextview=0x7f030005;
+        public static final int activity_main=0x7f030006;
+        public static final int activity_ninesqure=0x7f030007;
+        public static final int activity_qqstepview=0x7f030008;
+        public static final int activity_sweepgradientview=0x7f030009;
+        public static final int activity_threeballview=0x7f03000a;
+        public static final int circle=0x7f03000b;
+        public static final int circleview=0x7f03000c;
     }
     public static final class menu {
         public static final int main=0x7f090000;
